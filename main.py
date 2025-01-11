@@ -1,11 +1,9 @@
+
 from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello from WBL AWS Team!"}
+    return {"Hello from WBL team!"}
 
-@app.get("/hello/{'kumar'}")
-def read_item(name: str):
-    return {"message": f"Hello, {kumar}!"}
